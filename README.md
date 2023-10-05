@@ -13,7 +13,7 @@ To get started with Head to the Stars, follow these simple steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/KillianHzr/headInTheStars.git
+   git clone https://github.com/KillianHzr/headInTheStars.git head-to-the-stars
    cd head-to-the-stars
    ```
 
