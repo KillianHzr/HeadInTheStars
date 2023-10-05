@@ -1,4 +1,4 @@
-# <span style="color:#A077D8;"><img src="public/imgs/moon.png" alt="Logo" width="30"> - <span style="text-decoration: underline">Head to the Stars</span></span>
+# <span style="color:#A077D8;">🌙 - <span style="text-decoration: underline">Head to the Stars</span></span>
 
 Welcome to Head to the Stars, your gateway to the cosmos! Immerse yourself in the wonders of the universe through our groundbreaking Mind-Transcription Chip technology. With us, you can embark on cosmic journeys, witness the birth of stars, and explore distant galaxies—all without leaving the comfort of your own mind.
 
