@@ -1,7 +1,199 @@
 //Override des variables bootstrap scss ici
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import '/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
-h1{
-    background-color: red;
+@font-face {
+    font-family: termina-bold;
+    src: url("/fonts/TerminaTest-Bold.otf");
+}
+@font-face {
+    font-family: termina-semi;
+    src: url("/fonts/TerminaTest-Demi.otf");
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url("/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: poppins-semi;
+    src: url("/fonts/Poppins-SemiBold.ttf");
+}
+
+$primary: #FBFF4F;
+$secondary: #903ba6;
+$success: #28A745;
+$font-size-base: 1.1rem;
+$font-family-base: poppins-regular;
+$headings-font-family: termina-semi;
+
+$btn-padding-x: 24px;
+$btn-padding-y: 12px;
+$btn-font-weight: 700;
+
+$grid-breakpoints: (
+  xs: 0,
+  xsm: 375px,
+  sm: 576px,
+  sd: 618px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+css custom ici
+
+::-webkit-scrollbar-track
+{
+	border: 2px solid #181931;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #181931;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #FBFF4F;
+	border-radius: 10px;
+}
+
+
+*{
+    @media (min-width: 992px) {
+        cursor: none !important;        
+    }
+
+        
+    body{
+
+        background-image: url("/images/background-stars.png");
+        background-size: 50%;
+        background-repeat: repeat;
+
+        #list-sections{
+            .active{
+                color: $primary !important;
+            }
+        }
+
+        #cursor {
+            pointer-events: none;
+            width: 1.35rem;
+            height: 1.35rem;
+            border: solid 2.2px #fff;
+            border-radius: 50%;
+            position: fixed;
+            top: -10px;
+            left: -10px;
+            transition: 0.35s ease width, 0.35s ease height, 0.35s ease border, 0.35s ease background, 0.35s ease top, 0.35s ease left, opacity 0.35s ease;
+            z-index: 1000;
+        }
+        
+        .text-primary{
+            text-shadow: 0px 0px 70px rgba(251, 255, 79, 0.50);
+        }
+        .btn-outline-primary{
+            box-shadow: inset 0px 0px 10px 0px rgba(251, 255, 79, 0.50), 0px 0px 10px 0px rgba(251, 255, 79, 0.50);
+        }
+
+        ul li a{
+            letter-spacing: 4px;
+        }
+
+        .logo{
+            width: 100px;
+
+            @media (max-width: 992px) {
+                width: 65px;
+            }
+
+            @media (max-width: 768px) {
+                width: 45px;
+            }
+        }
+
+        h1{
+            font-size: 60px;
+            letter-spacing: 1.2px;
+            line-height: 70px;
+
+            @media (max-width: 375px) {
+                font-size: 35px;            
+            }
+
+            .stars-title{
+                font-family: termina-bold;
+                font-size: 80px;
+
+                @media (max-width: 375px) {
+                    font-size: 60px;
+                    margin-top: -20px;      
+                }
+            }
+        }
+
+        h2{
+            font-size: 40px;
+
+            @media (max-width: 500px) {
+                font-size: 30px;            
+            }
+        }
+
+        h3{
+            font-family: poppins-semi;
+            font-size: 24px;
+        }
+        
+        p{
+            line-height: 30px;
+            letter-spacing: 0.72px;
+        }
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .headercustom{
+            height: 70%;
+        }
+
+        .imgheader{
+            height: 350px;
+            transform: rotate(-47.401deg);
+            
+            @media (max-width: 599px) {
+                height: 200px;
+            }
+
+            @media (min-width:599px) and (max-width: 992px) {
+                height: 275px;
+            }
+        }
+        
+        .mt-custom{
+            margin-top: 150px;
+        }
+
+        .mb-custom{
+            margin-bottom: 300px;
+        }
+
+        .footer{
+            font-size: 14px;
+        }
+
+        .fa-github{
+            font-size: 30px;
+        }
+    }
+
 }
